@@ -2,131 +2,83 @@
 
 This project applies machine learning techniques to predict heart disease using the Cleveland Heart Disease dataset.
 
-The goal of this project is to demonstrate a full machine learning workflow including:
+## Overview
+
+The notebook demonstrates a full machine learning workflow:
 
 - exploratory data analysis
 - data preparation
-- model training
+- Logistic Regression
+- Random Forest
 - model evaluation
-- model interpretation
+- feature importance
+- ROC analysis
 
----
+## Dataset
 
-# Dataset
-
-The dataset used is the **Cleveland Heart Disease dataset**, which contains medical attributes used to help predict the presence of heart disease.
-
-Key features include:
-
-- age
-- sex
-- chest pain type (cp)
-- resting blood pressure (trestbps)
-- cholesterol (chol)
-- maximum heart rate (thalach)
-- exercise induced angina (exang)
-- ST depression (oldpeak)
+The dataset contains patient-level clinical variables used to predict the presence of heart disease.
 
 Target variable:
 
-```
-0 = No heart disease
-1 = Heart disease present
-```
+- `0` = No heart disease
+- `1` = Heart disease present
 
----
-
-# Exploratory Data Analysis
-
-### Heart Disease Distribution
-
-![Heart Disease Distribution](images/heart_disease_distribution.png)
-
-### Age Distribution
-
-![Age Distribution](images/age_distribution.png)
-
-### Heart Disease vs Age
-
-![Heart Disease vs Age](images/heart_disease_vs_age.png)
-
-### Feature Correlation Matrix
-
-![Correlation Matrix](images/correlation_matrix.png)
-
----
-
-# Model Development
-
-Two machine learning models were trained and evaluated:
+## Models Used
 
 - Logistic Regression
 - Random Forest Classifier
 
-The dataset was split into training and testing sets using an 80/20 split.
+## Results
 
----
+- Logistic Regression Accuracy: **0.885**
+- Random Forest Accuracy: **0.869**
+- Random Forest ROC AUC: **0.93**
 
-# Model Evaluation
+## Exploratory Data Analysis
+
+### Heart Disease Distribution
+![Heart Disease Distribution](images/heart_disease_distribution.png)
+
+### Age Distribution
+![Age Distribution](images/age_distribution.png)
+
+### Heart Disease vs Age
+![Heart Disease vs Age](images/heart_disease_vs_age.png)
+
+### Correlation Matrix
+![Correlation Matrix](images/correlation_matrix.png)
+
+## Model Evaluation
 
 ### Confusion Matrix
-
 ![Confusion Matrix](images/confusion_matrix.png)
 
-### Feature Importance (Random Forest)
-
+### Random Forest Feature Importance
 ![Feature Importance](images/feature_importance.png)
 
 ### ROC Curve
-
 ![ROC Curve](images/roc_curve.png)
 
-The Random Forest model achieved an **AUC of approximately 0.93**, indicating strong classification performance.
+### Model Accuracy Comparison
+![Model Accuracy Comparison](images/model_accuracy_comparison.png)
 
----
-
-# Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
 - NumPy
-- Scikit-learn
 - Matplotlib
 - Seaborn
+- Scikit-learn
 - Jupyter Notebook
 
----
+## Project Structure
 
-# Project Structure
-
+```text
+heart-disease-ml-prediction/
+├── data/
+├── images/
+├── notebooks/
+├── requirements.txt
+└── README.md
 ```
-heart-disease-ml-prediction
-│
-├── data
-│
-├── notebooks
-│   └── heart_disease_prediction.ipynb
-│
-├── images
-│   ├── heart_disease_distribution.png
-│   ├── age_distribution.png
-│   ├── heart_disease_vs_age.png
-│   ├── confusion_matrix.png
-│   ├── feature_importance.png
-│   └── roc_curve.png
-│
-└── requirements.txt
-```
-
----
-
-# Purpose
-
-This project demonstrates how machine learning can be applied to healthcare data to assist in identifying potential heart disease risk.
-
-It also serves as a portfolio project demonstrating practical skills in:
-
-- data analysis
-- machine learning modeling
-- model evaluation
-- visualization
