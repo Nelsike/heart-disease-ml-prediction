@@ -50,6 +50,10 @@ Target variable:
 
 ![Heart Disease vs Age](images/heart_disease_vs_age.png)
 
+### Feature Correlation Matrix
+
+![Correlation Matrix](images/correlation_matrix.png)
+
 ---
 
 # Model Development
