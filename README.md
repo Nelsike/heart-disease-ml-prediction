@@ -78,7 +78,7 @@ Target variable:
 heart-disease-ml-prediction/
 ├── data/
 ├── images/
-├── notebooks/
+├── notebook/
 ├── requirements.txt
 └── README.md
 ```
